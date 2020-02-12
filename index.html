@@ -17,33 +17,46 @@
 	<link rel="stylesheet" href="libs/slick/slick-theme.css" />
 </head>
 <body>
-
+	<div class="overlay"></div>
 	<!--BEGIN Header-->
 	<header>
 		<img class="logo" src="img/logo.png" alt="">
 	</header>
+
 	<nav>
-		<div class="container">
-			<ul class="menu">
-				<li><a class="menu__link" href="#">Board game</a></li>
-				<li><a class="menu__link" href="#">Portfolio</a></li>
-				<li><a class="menu__link" href="#">Shop</a></li>
-				<li><a class="menu__link" href="#">About me</a></li>
-				<li><a class="menu__link" href="#">Contacts</a></li>
-			</ul>
-		</div>
-	</nav>
+			<div class="border_top"></div>
+			<div class="border_bottom"></div>
+			<div class="container">
+				<ul class="menu">
+					<!-- <li><a class="menu__link" href="#">Board game</a></li> -->
+					<li><a class="menu__link" href="#">Portfolio</a></li>
+					<li><a class="menu__link" href="#">Shop</a></li>
+					<li><a class="menu__link" href="#">About me</a></li>
+					<li><a class="menu__link" href="#">Contacts</a></li>
+				</ul>
+			</div>
+		</nav>
 	<!--END Header-->
 
 	<!--BEGIN Content-->
 	<div class="content">
 		<div class="container">
-			Content
+			<div class="cols">
+				<div class="picture col--3">
+					<img src="img/pict.jpg" alt="">
+				</div>
+				<div class="picture col--3">
+					<img src="img/pict.jpg" alt="">
+				</div>
+				<div class="picture col--3">
+					<img src="img/pict.jpg" alt="">
+				</div>
+			</div>
 		</div>
 	</div>
 	<!--END Content-->
 
-
+	<!--BEGIN Footer-->
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -61,6 +74,7 @@
 			</div>
 		</div>
 	</footer>
+	<!--END Footer-->
 	<div class="hidden">
 		<div class="politics" id="politics">
 			<h3>Политика конфиденциальности</h3>
@@ -120,7 +134,7 @@
 	<script>
 		new WOW().init();
 	</script>
-	<script src="js/common.js"></script>
+	<!-- <script src="js/common.js"></script> -->
 	
 </body>
 </html>
