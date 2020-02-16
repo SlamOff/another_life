@@ -19,37 +19,50 @@
 <body>
 	<div class="overlay"></div>
 	<!--BEGIN Header-->
+
+	<div class="toggle_btn">
+		<span class="sandwich">
+			<span class="sw-topper"></span>
+			<span class="sw-bottom"></span>
+			<span class="sw-footer"></span>
+		</span>
+	</div>
 	<header>
 		<img class="logo" src="img/logo.png" alt="">
 	</header>
 
-	<nav>
-			<div class="border_top"></div>
-			<div class="border_bottom"></div>
-			<div class="container">
-				<ul class="menu">
-					<!-- <li><a class="menu__link" href="#">Board game</a></li> -->
-					<li><a class="menu__link" href="#">Portfolio</a></li>
-					<li><a class="menu__link" href="#">Shop</a></li>
-					<li><a class="menu__link" href="#">About me</a></li>
-					<li><a class="menu__link" href="#">Contacts</a></li>
-				</ul>
-			</div>
-		</nav>
+	<nav id="nav">
+		<div class="border_top"></div>
+		<div class="border_bottom"></div>
+		<div class="container">
+			<ul class="menu">
+				<!-- <li><a class="menu__link" href="#">Board game</a></li> -->
+				<li><a class="menu__link" href="#">Portfolio</a></li>
+				<li><a class="menu__link" href="#">Shop</a></li>
+				<li><a class="menu__link" href="#">About me</a></li>
+				<li><a class="menu__link" href="#">Contacts</a></li>
+			</ul>
+		</div>
+	</nav>
 	<!--END Header-->
 
 	<!--BEGIN Content-->
 	<div class="content">
-		<div class="container">
-			<div class="cols">
-				<div class="picture col--3">
-					<img src="img/pict.jpg" alt="">
-				</div>
-				<div class="picture col--3">
-					<img src="img/pict.jpg" alt="">
-				</div>
-				<div class="picture col--3">
-					<img src="img/pict.jpg" alt="">
+		<div class="portfolio">
+			<div class="container">
+				<div class="cols">
+					<div class="picture col--3">
+						<img src="img/pict.jpg" alt="">
+						<div class="text">Описание Товара/Работы</div>
+					</div>
+					<div class="picture col--3">
+						<img src="img/pict.jpg" alt="">
+						<div class="text">Описание Товара/Работы</div>
+					</div>
+					<div class="picture col--3">
+						<img src="img/pict.jpg" alt="">
+						<div class="text">Описание Товара/Работы</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -68,7 +81,7 @@
 					<p>&copy; <script type="text/javascript">var mdate = new Date(); document.write(mdate.getFullYear());</script> "Another Life". All rights reserved</p>
 				</div>
 				<div class="col-sm-3 col-xs-12 made_by">
-					<p>Designed by:</p>
+					<p>Site designed by:</p>
 					<p><a target="_blank" href="https://www.facebook.com/profile.php?id=100000910454924&ref=bookmarks">Vitalii Pustovyi</a></p>
 				</div>
 			</div>
@@ -134,7 +147,7 @@
 	<script>
 		new WOW().init();
 	</script>
-	<!-- <script src="js/common.js"></script> -->
+	<script src="js/common.js"></script>
 	
 </body>
 </html>

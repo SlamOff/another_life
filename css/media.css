@@ -65,11 +65,41 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+	#nav {
+		display: none;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		left: 0;
+		z-index: 3;
+	}
+	.col--3 {
+		flex: 0 0 48%;
+	}
+	.overlay {
+		background-image: url(../img/1.png);
+	}
+	header {
+		margin-bottom: 0;
+	}
+	.content {
+		padding: 40px 0;
+	}
+	.menu {
+		display: block;
+		padding: 30px 0;
+		height: auto;
+		text-align: center;
+	}
 	.made_by {
 		text-align: center;
 	}
 	footer {
 		text-align: center;
+		padding: 30px 0;
+	}
+	.copyright {
+		margin: 20px 0;
 	}
 	html {
 		font-size: 7.5px;
@@ -85,6 +115,18 @@
 	}
 	.contact h3 {
 		text-align: center;
+	}
+	.logo {
+		max-width: 80%;
+	}
+	.menu .menu__link {
+		font-size: 24px;
+	}
+	.footer_logo img {
+		max-width: 50%;
+	}
+	.toggle_btn {
+		display: block;
 	}
 }
 
