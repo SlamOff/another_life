@@ -73,8 +73,15 @@
 		left: 0;
 		z-index: 3;
 	}
+	.menu li {
+		margin-bottom: 15px;
+	}
+	.menu li:last-of-type {
+		margin-bottom: 0;
+	}
 	.col--3 {
 		flex: 0 0 48%;
+		margin-bottom: 30px;
 	}
 	.overlay {
 		background-image: url(../img/1.png);
@@ -157,6 +164,9 @@
 	}
 	.open_form .timer__item {
 		margin-right: 1rem;
+	}
+	.col--3 {
+		flex: 0 0 100%;
 	}
 }
 

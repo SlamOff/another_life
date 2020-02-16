@@ -136,8 +136,6 @@ nav {
 .menu .menu__link {
 	color: #a8cfe8;
 	font-size: 36px;
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: #000;
 	text-shadow: 1px 1px 2px #000;
 	-webkit-transition: all .3s;
 	-moz-transition: all .3s;
@@ -147,17 +145,24 @@ nav {
 	display: block;
 	position: relative;
 }
-.menu .menu__link:hover {
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	transform: scale(1.2);
-	text-shadow: #a8cfe8 0 0 10px;
+@media only screen and (min-width : 992px) {
+	.menu .menu__link:hover {
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		transform: scale(1.2);
+		text-shadow: #a8cfe8 0 0 10px;
+	}
+	.menu .menu__link:hover:after,
+	.menu .menu__link:hover:before {
+		width: 50%;
+	}
+	.menu .menu__link {
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: #000;
+	}
 }
-.menu .menu__link:hover:after,
-.menu .menu__link:hover:before {
-	width: 50%;
-}
+
 footer {
 	background-color: #000;
 	color: #fff;
@@ -266,18 +271,20 @@ footer .row {
 	-moz-box-shadow: 0 0px 45px rgba(150, 98, 172, 1);
 	box-shadow: 0 0px 45px rgba(150, 98, 172, 1);
 }
-.portfolio .col--3:hover {
-	-webkit-box-shadow: 0 0px 45px rgba(255, 255, 255, 1);
-	-moz-box-shadow: 0 0px 45px rgba(255, 255, 255, 1);
-	box-shadow: 0 0px 45px rgba(255, 255, 255, 1);
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
-	-webkit-border-radius: 10%;
-	-moz-border-radius: 10%;
-	-ms-border-radius: 10%;
-	border-radius: 10%;
+@media only screen and (min-width : 992px) {
+	.portfolio .col--3:hover {
+		-webkit-box-shadow: 0 0px 45px rgba(255, 255, 255, 1);
+		-moz-box-shadow: 0 0px 45px rgba(255, 255, 255, 1);
+		box-shadow: 0 0px 45px rgba(255, 255, 255, 1);
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+		-webkit-border-radius: 10%;
+		-moz-border-radius: 10%;
+		-ms-border-radius: 10%;
+		border-radius: 10%;
+	}
 }
 .portfolio .cols .text {
 	position: absolute;
@@ -315,9 +322,11 @@ footer .row {
 	-ms-transition: all .3s;
 	transition: all .3s;
 }
-.portfolio .col--3:hover .text {
-	opacity: 1;
-	z-index: 1;
+@media only screen and (min-width : 992px) {
+	.portfolio .col--3:hover .text {
+		opacity: 1;
+		z-index: 1;
+	}
 }
 .toggle_btn {
 	display: none;
